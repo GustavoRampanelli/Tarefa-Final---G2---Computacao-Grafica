@@ -6,9 +6,8 @@ Prof. Fahad Kalil
 ---
 
 ## 👥 Integrantes do Grupo
-* **Integrante 1:** [Nome Completo]
-* **Integrante 2:** [Nome Completo]
-* **Integrante 3:** [Nome Completo]
+* **Integrante 1:** Gustavo Rampanelli   
+* **Integrante 2:** Laura Cemin Iora
 
 ---
 
