@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <title>Computação Gráfica - Trabalho G2 (Three.js + Rapier)</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+
+  <link rel="icon" href="https://discoverthreejs.com/favicon.ico" type="image/x-icon">
+  <link href="./styles/main.css" rel="stylesheet" type="text/css">
+
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.min.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/",
+        "dat.gui": "https://cdn.jsdelivr.net/npm/three@0.128.0/examples/jsm/libs/dat.gui.module.js",
+        "@dimforge/rapier3d-compat": "https://cdn.jsdelivr.net/npm/@dimforge/rapier3d-compat@0.14.0/rapier.es.min.js"
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div id="scene-switcher">
+    <div class="switcher-title">Cenas:</div>
+    <button id="btn-scene-mandatory" class="scene-btn active" title="Cena Obrigatória (70%)">
+      🏠 Cena Obrigatória (70%)
+    </button>
+    <button id="btn-scene-option2" class="scene-btn" title="Opção 2: Terracota e Reflexos (30%)">
+      🎨 Opção 2 (30%)
+    </button>
+    <button id="btn-scene-alchemist" class="scene-btn" title="Cena de Estudo: O Alquimista (Paulo Coelho)">
+      🌙 O Alquimista
+    </button>
+    <span class="switcher-separator"></span>
+    <button id="btn-screenshot" class="scene-btn btn-action" title="Salvar captura da imagem atual no computador">
+      📸 Salvar Imagem
+    </button>
+  </div>
+
+  <div id="info-overlay">
+    <div id="info-content">
+      <span id="scene-title">Cena 1: Sala de Estar (Obrigatória - 70%)</span>
+      <p id="scene-desc">Luminária procedural diagonal | Cortina animada com Rapier3D | Sofá e folhagens</p>
+    </div>
+  </div>
+
+  <div id="scene-container">
+    <!-- Our <canvas> will be inserted here -->
+  </div>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>
